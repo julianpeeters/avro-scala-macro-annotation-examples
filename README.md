@@ -1,4 +1,6 @@
 avro-scala-macro-annotation-examples
 ====================================
 
-Examples in Apache Avro, Scalding, Spark, Scalavro, Salat-Avro
+Example of how to use the @AvroRecord annotation to make a Scala case class Avro serializable. 
+
+//TODO: Examples in Apache Avro, Scalding, Spark, Scalavro, Salat-Avro
