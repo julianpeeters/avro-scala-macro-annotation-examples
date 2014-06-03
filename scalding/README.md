@@ -1,3 +1,5 @@
+Adapted from:
+
 Strata2014ScaldingTutorial
 ==========================
 
@@ -25,14 +27,9 @@ detailed information about install on other systems.
 2. Clone this project
 ---------------------
 
-     > git clone https://github.com/vitalyg/Strata2014ScaldingTutorial.git
-     > cd Strata2014ScaldingTutorial
+     > git clone https://github.com/julianpeeters/avro-scala-macro-annotation-examples.git
+     > cd avro-scala-macro-annotation-examples/scalding
 
-Some people reported problems with git command. As an alternative, you can download the [zip file](http://github.com/vitalyg/Strata2014ScaldingTutorial/archive/master.zip) and uncompress it:
-
-     > wget http://github.com/vitalyg/Strata2014ScaldingTutorial/archive/master.zip
-     > unzip master.zip
-     > cd Strata2014ScaldingTutorial-master
 
 3. Enter SBT Command Line
 -------------------------
@@ -44,10 +41,10 @@ Some people reported problems with git command. As an alternative, you can downl
 This step may take quite a bit of time downloading all the parts and dependencies so it
 makes so much sense to run it in advance.
 
-4. Compile and Run the WordCount Example
+4. Compile and Run the Write Example
 ----------------------------------------
 
-     Tutorial > run tutorial.WordCountJob
+     Tutorial > run tutorial.PackedAvroWriteJob
      ...
      [success] Total time: 2 s, completed Feb 3, 2014 9:15:12 PM
      Tutorial >
@@ -58,7 +55,24 @@ This step can also take quite a bit of time.
 5. See the Results
 ------------------
 
-The file `grimmWordCounts.tsv` should be created in the `data` directory.
+The file `PackedAvroOutput.avro` should be created in the `data` directory.
+
+
+6. Compile and Run the Read Example 
+----------------------------------------
+
+     Tutorial > run tutorial.PackedAvroReadJob
+     ...
+     [success] Total time: 2 s, completed Feb 3, 2014 9:15:12 PM
+     Tutorial >
+
+This step can also take quite a bit of time. 
+
+
+7. See the Results
+------------------
+
+The file `AvroWordcountOutput.tsv` should be created in the `data` directory.
 
 FAQ
 ---
